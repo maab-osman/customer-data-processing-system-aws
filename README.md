@@ -32,7 +32,7 @@ The system was validated by:
 
 ## Project Structure
 
-- `Phase1_Report.pdf` → Full report
+- `phase1/Phase1_Report.pdf` → Full report
 - `architecture/` → Architecture diagram
 - `screenshots/` → Implementation evidence
 - `commands/` → CLI commands used

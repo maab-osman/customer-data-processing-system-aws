@@ -13,7 +13,7 @@ The system consists of:
 - Internet Gateway and route tables
 - Security groups for controlled access
   
-![Architecture](phase1/architecture-diagram.png)
+![Architecture](architecture/architecture-diagram.png)
 
 ## Key Features
 - Secure communication between EC2 and RDS

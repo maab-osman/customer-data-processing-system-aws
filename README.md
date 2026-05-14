@@ -108,19 +108,6 @@ This project was implemented in the AWS Academy Learner Lab environment with tem
 
 ---
 
-## Future Improvements
-
-Possible future enhancements include:
-
-- Auto Scaling Groups
-- Load Balancer integration
-- IAM role-based access control
-- Infrastructure as Code (Terraform/OpenTofu)
-- Automated backup and recovery strategies
-- Enhanced monitoring and security automation
-
----
-
 ## Author
 
 Maab Osman

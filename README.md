@@ -57,14 +57,15 @@ Phase 1 focused on designing and deploying the core infrastructure:
 
 ## Phase 2 Governance Features
 
-Phase 2 focused on cloud governance, monitoring, and operational visibility:
+The environment was extended with operational and governance capabilities including:
 
+- Amazon CloudWatch dashboards and alarms
+- Amazon SNS alert notifications
+- AWS CloudTrail activity logging
 - Resource tagging strategy
-- CloudWatch monitoring and dashboards
-- CPU utilization alarms
-- SNS email notifications
-- CloudTrail API activity logging
-- Operational validation and alert testing
+- S3 lifecycle policies for storage cost optimization
+
+These additions improved monitoring, auditing, operational visibility, and governance within the AWS environment.
 
 ---
 

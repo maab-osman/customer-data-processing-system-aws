@@ -1,44 +1,118 @@
-# Customer Data Processing System AWS
+# Customer Data Processing System on AWS
+
 ## Overview
-This project demonstrates the design and deployment of a customer data processing system using AWS. The architecture follows a multi-tier design with secure networking and service integration.
+This project demonstrates the design, deployment, and governance of a customer data processing system using AWS cloud services. The architecture follows a secure multi-tier design that separates networking, compute, storage, and database resources across public and private subnets.
+
+The project was implemented as part of the AWS Cloud Operations course using the AWS Academy Learner Lab environment.
 
 ## Architecture
 
-The system consists of:
+The system architecture includes:
 
-- Amazon EC2 (processing layer)
-- Amazon RDS (database layer)
-- Amazon S3 (object storage)
-- VPC with public and private subnets
-- Internet Gateway and route tables
-- Security groups for controlled access
-  
+- Amazon EC2 instance acting as the processing layer
+- Amazon RDS MariaDB instance deployed in private subnets
+- Amazon S3 bucket for customer data storage
+- Amazon VPC with public and private subnet separation
+- Internet Gateway and route tables for controlled connectivity
+- Security groups for secure communication between services
+- CloudWatch monitoring and dashboards
+- SNS alert notifications
+- CloudTrail activity logging
+
 ![Architecture](architecture/architecture-diagram.png)
 
-## Key Features
-- Secure communication between EC2 and RDS
-- Private database deployment
-- File storage using S3
-- CLI-based deployment and validation
-- SQL-based data processing
+---
+
+## AWS Services Used
+
+### Core Infrastructure
+- Amazon EC2
+- Amazon RDS (MariaDB)
+- Amazon S3
+- Amazon VPC
+- Route Tables
+- Internet Gateway
+- Security Groups
+
+### Governance & Operations
+- Amazon CloudWatch
+- Amazon SNS
+- AWS CloudTrail
+
+---
+
+## Phase 1 Features
+
+Phase 1 focused on designing and deploying the core infrastructure:
+
+- Multi-tier AWS architecture
+- Secure VPC networking
+- Public and private subnet deployment
+- EC2 and RDS integration
+- S3 object storage
+- Database connectivity validation
+- CLI-based deployment and testing
+
+---
+
+## Phase 2 Governance Features
+
+Phase 2 focused on cloud governance, monitoring, and operational visibility:
+
+- Resource tagging strategy
+- CloudWatch monitoring and dashboards
+- CPU utilization alarms
+- SNS email notifications
+- CloudTrail API activity logging
+- Operational validation and alert testing
+
+---
 
 ## Validation
-The system was validated by:
 
-- Connecting to EC2 via SSH
-- Uploading data to S3
-- Connecting to RDS from EC2
-- Creating and querying a customer database
+The environment was validated through practical testing:
 
-## Project Structure
+- SSH connection to EC2 instance
+- S3 file upload and retrieval
+- Secure connection from EC2 to RDS
+- SQL database creation and query execution
+- CloudWatch alarm triggering
+- SNS email notification delivery
+- CloudTrail event logging verification
 
-- `phase1/Phase1_Report.pdf` → Full report
-- `architecture/` → Architecture diagram
-- `screenshots/` → Implementation evidence
-- `commands/` → CLI commands used
+---
+
+## Repository Structure
+
+```text
+architecture/     → Architecture diagrams
+commands/         → AWS CLI commands and validation steps
+phase1/           → Phase 1 report
+phase2/           → Phase 2 report
+screenshots/      → Implementation and validation evidence
+```
+
+---
 
 ## Notes
-This project was implemented in the AWS Academy Learner Lab environment with limited permissions and budget constraints.
+
+This project was implemented in the AWS Academy Learner Lab environment with temporary sandbox infrastructure, limited permissions, and budget constraints. The environment required careful cost optimization and resource management practices.
+
+---
+
+## Future Enhancements
+
+Possible future improvements include:
+
+- Auto Scaling Groups
+- Load Balancer integration
+- IAM role-based access control
+- Automated backups and recovery
+- Infrastructure as Code (Terraform/OpenTofu)
+- Enhanced monitoring and security automation
+
+---
 
 ## Author
+
 Maab Osman

@@ -121,6 +121,6 @@ Possible future enhancements include:
 
 ---
 
-##Author
+## Author
 
 Maab Osman
